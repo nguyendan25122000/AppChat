@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="92.0" prefWidth="631.0" style="-fx-border-color: CORAL;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DanhSachController">
+	<center>
+		<AnchorPane prefHeight="92.0" prefWidth="640.0" style="-fx-border-color: black;">
+			<children>
+				<BorderPane layoutX="14.0" prefHeight="92.0" prefWidth="75.0">
+					<center>
+						<ImageView fitHeight="68.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+							<image>
+								<Image url="@../../../../OneDrive/Hình%20ảnh/ChatApp/icon3.jpg" />
+							</image>
+						</ImageView>
+					</center>
+				</BorderPane>
+				<Label fx:id="nameUs" layoutX="111.0" layoutY="31.0" prefHeight="27.0" prefWidth="239.0" text="Name">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Label>
+				<Label layoutX="111.0" layoutY="58.0" prefHeight="20.0" prefWidth="172.0" text="Đã gửi yêu cầu kết bạn!" />
+				<Label fx:id="btnChapNhan" alignment="CENTER" layoutX="543.0" layoutY="30.0" prefHeight="35.0" prefWidth="65.0" style="-fx-background-color: CORAL;" text="Chấp Nhận" />
+				<Label fx:id="btnTuChoi" alignment="CENTER" layoutX="445.0" layoutY="30.0" prefHeight="35.0" prefWidth="65.0" style="-fx-border-color: CORAL;" text="Từ Chối" />
+			</children>
+		</AnchorPane>
+	</center>
+</BorderPane>

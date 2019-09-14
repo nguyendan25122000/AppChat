@@ -1,0 +1,35 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#lblForgot:hover{
+	-fx-text-fill:#ff003f;
+	-fx-font-style: italic;
+}
+#lblRegister:hover{
+	-fx-text-fill:#ff003f;
+	-fx-font-style: italic;
+}
+#lblPhoneUser, #lblPassword, #lblPassword1, #lblNameUser, #lblGender, #lblDate,#lblCheck, #lblChange{
+	-fx-font-style: italic;
+	-fx-text-fill:#ff003f;
+}
+#lblPhoneCheck,#lblPasswordCheck,#lblPasswordCheck1{
+	-fx-font-style: italic;
+	-fx-text-fill:#ff003f;
+}
+#lblLogin{
+	-fx-font-style: italic;
+	-fx-text-fill:#ff003f;
+}
+#lblEdit:hover{
+	-fx-text-fill:#88ecf7;
+	
+}
+#lblUpdate:hover{
+	-fx-text-fill:#88ecf7;
+}
+#lblLogOut:hover{
+	-fx-text-fill:#ff003f;
+
+}
+#lblChangePassword:hover{
+	-fx-text-fill:#ff003f;
+}

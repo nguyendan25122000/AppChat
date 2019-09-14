@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="675.0" prefWidth="955.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientController">
+	<center>
+		<BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+			<center>
+				<GridPane fx:id="gridPaneChu" BorderPane.alignment="CENTER">
+					<columnConstraints>
+						<ColumnConstraints hgrow="SOMETIMES" maxWidth="314.0" minWidth="0.0" prefWidth="56.0" />
+						<ColumnConstraints hgrow="SOMETIMES" maxWidth="786.0" minWidth="10.0" prefWidth="258.0" />
+						<ColumnConstraints hgrow="SOMETIMES" maxWidth="645.0" minWidth="10.0" prefWidth="640.0" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+					</rowConstraints>
+					<children>
+						<BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+							<top>
+								<GridPane fx:id="gridPane2" prefHeight="94.0" prefWidth="244.0" BorderPane.alignment="CENTER">
+									<columnConstraints>
+										<ColumnConstraints />
+										<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+									</columnConstraints>
+									<rowConstraints>
+										<RowConstraints maxHeight="220.0" minHeight="0.0" prefHeight="95.0" vgrow="SOMETIMES" />
+									</rowConstraints>
+									<children>
+										<AnchorPane prefHeight="144.0" prefWidth="246.0" style="-fx-border-color: CORAL;" GridPane.columnIndex="1">
+											<children>
+												<TextField fx:id="searchFriend" layoutX="14.0" layoutY="38.0" promptText="Tìm bạn bè, nhóm..." style="-fx-background-radius: 20;" />
+												<ImageView fx:id="imgAddFriend" fitHeight="30.0" fitWidth="30.0" layoutX="176.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+													<image>
+														<Image url="@../../../../OneDrive/Hình%20ảnh/ChatApp/icon7.png" />
+													</image>
+												</ImageView>
+												<ImageView fx:id="imgAddGroup" fitHeight="34.0" fitWidth="37.0" layoutX="210.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+													<image>
+														<Image url="@../../../../OneDrive/Hình%20ảnh/ChatApp/icon8.png" />
+													</image>
+												</ImageView>
+                                    <Label fx:id="lblOnline" layoutX="14.0" layoutY="9.0" prefHeight="22.0" prefWidth="147.0" />
+											</children>
+										</AnchorPane>
+									</children>
+								</GridPane>
+							</top>
+							<center>
+								<ScrollPane prefHeight="581.0" prefWidth="201.0" BorderPane.alignment="CENTER">
+									<content>
+										<AnchorPane fx:id="anchoScroll" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="241.0">
+											<children>
+												<VBox fx:id="vboxFriend" prefHeight="579.0" prefWidth="259.0" />
+											</children>
+										</AnchorPane>
+									</content>
+								</ScrollPane>
+							</center>
+						</BorderPane>
+						<GridPane alignment="CENTER" style="-fx-border-color: CORAL; -fx-background-color: GAINSBORO;">
+							<columnConstraints>
+								<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+							</columnConstraints>
+							<rowConstraints>
+								<RowConstraints maxHeight="220.0" minHeight="0.0" prefHeight="70.0" vgrow="SOMETIMES" />
+								<RowConstraints maxHeight="543.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+								<RowConstraints maxHeight="543.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+								<RowConstraints maxHeight="543.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+								<RowConstraints maxHeight="596.0" minHeight="10.0" prefHeight="379.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="596.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+							</rowConstraints>
+							<children>
+								<BorderPane prefHeight="200.0" prefWidth="200.0">
+									<center>
+										<ImageView fx:id="imgViewUser" fitHeight="46.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+											<image>
+												<Image url="@../../../../OneDrive/Hình%20ảnh/ChatApp/icon1.jpg" />
+											</image>
+										</ImageView>
+									</center>
+								</BorderPane>
+								<BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+									<center>
+										<ImageView fx:id="imgTinNhan" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+											<image>
+												<Image url="@../../../../OneDrive/Hình%20ảnh/ChatApp/icon12.jpg" />
+											</image>
+										</ImageView>
+									</center>
+								</BorderPane>
+								<BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+									<center>
+										<ImageView fx:id="imgDanhBa" fitHeight="40.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+											<image>
+												<Image url="@../../../../OneDrive/Hình%20ảnh/ChatApp/icon13.png" />
+											</image>
+										</ImageView>
+									</center>
+								</BorderPane>
+                        <BorderPane prefHeight="58.0" prefWidth="55.0" GridPane.rowIndex="5">
+                           <center>
+                              <ImageView fx:id="imgCaiDat" fitHeight="40.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                 <image>
+                                    <Image url="@../img/icon15.png" />
+                                 </image>
+                              </ImageView>
+                           </center>
+                        </BorderPane>
+							</children>
+						</GridPane>
+                  <BorderPane fx:id="borderPane" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                     <top>
+      						<GridPane fx:id="gridPane3" style="-fx-border-color: CORAL;" BorderPane.alignment="CENTER">
+      							<columnConstraints>
+      								<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      							</columnConstraints>
+      							<rowConstraints>
+      								<RowConstraints maxHeight="220.0" minHeight="7.0" prefHeight="92.0" vgrow="SOMETIMES" />
+      							</rowConstraints>
+      							<children>
+      								<AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: CORAL;">
+      									<children>
+      										<BorderPane layoutX="14.0" layoutY="14.0" prefHeight="70.0" prefWidth="75.0">
+      											<center>
+      												<ImageView fitHeight="68.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+      													<image>
+      														<Image url="@../../../../OneDrive/Hình%20ảnh/ChatApp/icon3.jpg" />
+      													</image>
+      												</ImageView>
+      											</center>
+      										</BorderPane>
+      										<Label layoutX="111.0" layoutY="31.0" prefHeight="25.0" prefWidth="127.0" text="Name">
+      											<font>
+      												<Font size="18.0" />
+      											</font>
+      										</Label>
+      										<Label layoutX="111.0" layoutY="58.0" prefHeight="20.0" prefWidth="172.0" text="Bạn đã..." />
+      									</children>
+      								</AnchorPane>
+      							</children>
+      						</GridPane>
+                     </top>
+                     <center>
+                        <BorderPane fx:id="bP" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <center>
+                              <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="618.0">
+                                       <children>
+                                          <VBox fx:id="vboxDanhBa" prefHeight="579.0" prefWidth="618.0">
+                                             <children>
+                        								<TextArea prefHeight="669.0" prefWidth="606.0" style="-fx-border-color: CORAL;" wrapText="true" />
+                        								<AnchorPane prefHeight="200.0" prefWidth="200.0">
+                        									<children>
+                        										<TextField layoutX="99.0" layoutY="9.0" prefHeight="35.0" prefWidth="470.0" promptText="Nhập tin nhắn..." style="-fx-background-radius: 20;" />
+                        										<BorderPane layoutX="14.0" layoutY="10.0" prefHeight="33.0" prefWidth="32.0">
+                        											<center>
+                        												<ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                        													<image>
+                        														<Image url="@../../../../OneDrive/Hình%20ảnh/ChatApp/icon10.png" />
+                        													</image>
+                        												</ImageView>
+                        											</center>
+                        										</BorderPane>
+                        										<BorderPane layoutX="54.0" layoutY="10.0" prefHeight="33.0" prefWidth="32.0">
+                        											<center>
+                        												<ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                        													<image>
+                        														<Image url="@../../../../OneDrive/Hình%20ảnh/ChatApp/icon11.png" />
+                        													</image>
+                        												</ImageView>
+                        											</center>
+                        										</BorderPane>
+                        										<BorderPane layoutX="586.0" layoutY="10.0" prefHeight="33.0" prefWidth="32.0">
+                        											<center>
+                        												<ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                        													<image>
+                        														<Image url="@../../../../OneDrive/Hình%20ảnh/ChatApp/icon9.png" />
+                        													</image>
+                        												</ImageView>
+                        											</center>
+                        										</BorderPane>
+                        									</children>
+                        								</AnchorPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </ScrollPane>
+                           </center>
+                        </BorderPane>
+                     </center>
+                  </BorderPane>
+					</children>
+				</GridPane>
+			</center>
+		</BorderPane>
+	</center>
+</BorderPane>

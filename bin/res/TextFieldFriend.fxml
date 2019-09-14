@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controller.TextFriendController">
+   <center>
+      <TextField fx:id="FriendInGroup" editable="false" prefHeight="29.0" prefWidth="299.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <Label fx:id="XoaField" prefHeight="17.0" prefWidth="36.0" style="-fx-text-fill: red;" text="X" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

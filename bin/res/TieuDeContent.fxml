@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="94.0" prefWidth="517.0" style="-fx-border-color: CORAL;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TieuDeContentController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="220.0" minHeight="7.0" prefHeight="92.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: CORAL;">
+         <children>
+            <BorderPane layoutX="14.0" layoutY="14.0" prefHeight="70.0" prefWidth="75.0">
+               <center>
+                  <ImageView fx:id="imgView" fitHeight="68.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../img/icon3.jpg" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <Label fx:id="nameUs" layoutX="89.0" layoutY="22.0" prefHeight="27.0" prefWidth="298.0" text="Name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCheckOnline" layoutX="89.0" layoutY="61.0" prefHeight="18.0" prefWidth="130.0" text="" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

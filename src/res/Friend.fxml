@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="468.0" prefWidth="368.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FriendController">
+	<center>
+		<AnchorPane prefHeight="475.0" prefWidth="368.0" BorderPane.alignment="CENTER">
+			<children>
+				<BorderPane layoutY="34.0" prefHeight="200.0" prefWidth="366.0">
+					<center>
+						<ImageView fx:id="imgDaiDien" fitHeight="202.0" fitWidth="363.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+					</center>
+				</BorderPane>
+				<BorderPane layoutX="-1.0" prefHeight="28.0" prefWidth="31.0">
+					<center>
+						<Label fx:id="lblBack" alignment="CENTER" prefHeight="27.0" prefWidth="30.0" style="-fx-border-color: grey;" text="&lt;" BorderPane.alignment="CENTER">
+							<font>
+								<Font name="System Bold" size="18.0" />
+							</font>
+						</Label>
+					</center>
+				</BorderPane>
+				<Label fx:id="lblName" alignment="CENTER" layoutX="1.0" layoutY="250.0" prefHeight="30.0" prefWidth="366.0" text="Name">
+					<font>
+						<Font name="System Bold" size="14.0" />
+					</font>
+				</Label>
+				<GridPane layoutY="330.0" prefHeight="79.0" prefWidth="366.0">
+					<columnConstraints>
+						<ColumnConstraints hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="162.0" />
+						<ColumnConstraints hgrow="SOMETIMES" maxWidth="234.0" minWidth="10.0" prefWidth="204.0" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+						<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+					</rowConstraints>
+					<children>
+						<Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="120.0" text="Ngày Sinh :" />
+						<Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="120.0" text="Giới Tính :" GridPane.rowIndex="1" />
+						<Label fx:id="lblNgaySinh" prefHeight="30.0" prefWidth="183.0" GridPane.columnIndex="1" />
+						<Label fx:id="lblGioiTinh" prefHeight="30.0" prefWidth="183.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+					</children>
+				</GridPane>
+				<Line endX="220.0" layoutX="146.0" layoutY="417.0" startX="-146.0" stroke="#a4a0a0" />
+				<Line endX="174.0" layoutX="193.0" layoutY="250.0" startX="-192.0" stroke="#979393" />
+            <Label fx:id="btnNhanTin" alignment="CENTER" layoutX="149.0" layoutY="290.0" prefHeight="30.0" prefWidth="71.0" style="-fx-border-color: CORAL;" text="Nhắn Tin" visible="false" />
+            <Label fx:id="btnKetBan" alignment="CENTER" layoutX="149.0" layoutY="290.0" prefHeight="30.0" prefWidth="71.0" style="-fx-background-color: CORAL;" text="Kết Bạn" />
+            <Label fx:id="btnHuyKetBan" alignment="CENTER" layoutX="149.0" layoutY="290.0" prefHeight="30.0" prefWidth="71.0" style="-fx-border-color: CORAL;" text=" Hủy Kết Bạn" visible="false" />
+			</children>
+		</AnchorPane>
+	</center>
+</BorderPane>

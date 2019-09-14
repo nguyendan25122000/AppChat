@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ContentController">
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="578.0" prefWidth="618.0">
+               <children>
+                  <VBox prefHeight="579.0" prefWidth="618.0">
+                     <children>
+                        <TextArea fx:id="txtAreaChat" editable="false" prefHeight="669.0" prefWidth="606.0" style="-fx-border-color: CORAL;" wrapText="true" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="txtNhanTin" layoutX="99.0" layoutY="9.0" prefHeight="35.0" prefWidth="470.0" promptText="Nhập tin nhắn..." style="-fx-background-radius: 20;" />
+                              <BorderPane layoutX="14.0" layoutY="10.0" prefHeight="33.0" prefWidth="32.0">
+                                 <center>
+                                    <ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                       <image>
+                                          <Image url="@../../../../OneDrive/Hình%20ảnh/ChatApp/icon10.png" />
+                                       </image>
+                                    </ImageView>
+                                 </center>
+                              </BorderPane>
+                              <BorderPane layoutX="54.0" layoutY="10.0" prefHeight="33.0" prefWidth="32.0">
+                                 <center>
+                                    <ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                       <image>
+                                          <Image url="@../../../../OneDrive/Hình%20ảnh/ChatApp/icon11.png" />
+                                       </image>
+                                    </ImageView>
+                                 </center>
+                              </BorderPane>
+                              <BorderPane layoutX="586.0" layoutY="10.0" prefHeight="33.0" prefWidth="32.0">
+                                 <center>
+                                    <ImageView fx:id="imgSend" fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                       <image>
+                                          <Image url="@../../../../OneDrive/Hình%20ảnh/ChatApp/icon9.png" />
+                                       </image>
+                                    </ImageView>
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

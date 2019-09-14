@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="442.0" prefWidth="326.0" stylesheets="@/css//application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateInfoController">
+   <center>
+      <AnchorPane prefHeight="440.0" prefWidth="326.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane prefHeight="134.0" prefWidth="324.0">
+               <center>
+                  <ImageView fx:id="imgView" fitHeight="150.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <TextField fx:id="tfName" layoutX="34.0" layoutY="193.0" prefHeight="26.0" prefWidth="254.0" />
+            <TextField fx:id="tfPhone" disable="true" layoutX="34.0" layoutY="250.0" prefHeight="26.0" prefWidth="254.0" />
+            <DatePicker fx:id="tfDate" layoutX="35.0" layoutY="306.0" prefHeight="26.0" prefWidth="252.0" />
+            <RadioButton fx:id="rdnMale" layoutX="35.0" layoutY="367.0" mnemonicParsing="false" text="Male">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Group" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="rdnFemale" layoutX="132.0" layoutY="367.0" mnemonicParsing="false" text="Female" toggleGroup="$Group" />
+            <Label layoutX="35.0" layoutY="173.0" prefHeight="20.0" prefWidth="75.0" text="Name User:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="230.0" prefHeight="20.0" prefWidth="75.0" text="Phonr User:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="286.0" prefHeight="20.0" prefWidth="75.0" text="Date User:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="347.0" prefHeight="20.0" prefWidth="75.0" text="Gender:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgUpload" fitHeight="17.0" fitWidth="22.0" layoutX="150.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/download%20(1).png" />
+               </image>
+            </ImageView>
+            <Line endX="223.00003051757812" layoutX="101.0" layoutY="395.0" startX="-100.0" stroke="#eae1e1" />
+            <Label fx:id="lblUpdate" layoutX="129.0" layoutY="403.0" text="Update">
+               <font>
+                  <Font name="Bell MT" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
